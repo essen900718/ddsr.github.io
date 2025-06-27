@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="Two Heads Better than One: Dual Degradation Representation for Blind Super-Resolution (ICIP 2024)">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="keywords" content="DDSR, Super-Resolution, Blind Super-Resolution">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Two Heads Better than One: Dual Degradation Representation for Blind Super-Resolution</title>
 
@@ -88,39 +88,44 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">DDSR: Dual Degradation Representation for Blind Super-Resolution</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">Hsuan Yuan</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">Shao-Yu Weng</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">I-Hsuan Lo</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">Wei-Chen Chiu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">Yu-Syuan Xu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">Hao-Chien Hsueh</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">Jen-Hui Chuang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10647237">Ching-Chun Huang</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>National Yang Ming Chiao Tung University,</span>
+            <span class="author-block"><sup>2</sup>MediaTek Inc.</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://ieeexplore.ieee.org/abstract/document/10647237"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,16 +134,16 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://www.techrxiv.org/users/723009/articles/707966-two-heads-better-than-one-dual-degradation-representation-for-blind-super-resolution"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>preprint</span>
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -146,10 +151,10 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/nycu-acm/DDSR_blindSRs"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -158,16 +163,15 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
-
           </div>
         </div>
       </div>
@@ -275,13 +279,14 @@
             Extensive experiments on several benchmarks demonstrate that our method 
             achieves SOTA performance in the blind SR problem.
           </p>
+          <img src="./static/images/network_v1.png" alt="ddsr_pipline_figure">
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -289,7 +294,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -449,6 +454,22 @@
   </div>
 </section>
 
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <p>
+      This work was financially supported in part (project number: 112UA10019) 
+      by the Co-creation Platform of the Industry Academia Innovation School, NYCU, 
+      under the framework of the National Key Fields Industry-University Cooperation 
+      and Skilled Personnel Training Act, from the Ministry of Education (MOE) and 
+      industry partners in Taiwan, and in part by MediaTek Inc. It also supported in 
+      part by the National Science and Technology Council, Taiwan, under Grant NSTC-112-2221-E-A49-089-MY3, 
+      Grant NSTC-110-2221-E-A49-066-MY3, Grant NSTC-111- 2634-F-A49-010, Grant NSTC-112-2425-H-A49-001-, 
+      and in part by the Higher Education Sprout Project of the National Yang Ming Chiao Tung University 
+      and the Ministry of Education (MOE), Taiwan.
+    </p>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
