@@ -258,31 +258,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Previous methods have demonstrated remarkable performance in single image super-resolution (SISR) 
+            tasks with known and fixed degradation (e.g., bicubic downsampling). However, when the actual 
+            degradation deviates from these assumptions, these methods may experience significant declines in performance. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            In this paper, we propose a Dual Branch Degradation Extractor Network to address the blind SR problem. 
+            While some BlindSR methods assume noise free degradation and others do not explicitly consider 
+            the presence of noise in the degradation model, our approach predicts two unsupervised degradation 
+            embeddings that represent blurry and noisy information, respectively. 
+            The SR network can then be adapted to blur embedding and noise embedding in distinct ways. 
+            Furthermore, we treat the degradation extractor as a regularizer to capitalize on the differences
+            between SR and HR images. 
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Extensive experiments on several benchmarks demonstrate that our method 
+            achieves SOTA performance in the blind SR problem.
           </p>
         </div>
       </div>
